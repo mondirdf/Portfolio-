@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="skills.pageTitle">Skills - Mondir Dif</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button onclick="switchLanguage('en')" class="lang-btn" data-lang="en">EN</button>
+        <button onclick="switchLanguage('fr')" class="lang-btn" data-lang="fr">FR</button>
+        <button onclick="switchLanguage('ar')" class="lang-btn" data-lang="ar">ع</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">MD</div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <div class="container">
+            <h1 data-i18n="skills.title">What I Do</h1>
+            <p class="intro-text" data-i18n="skills.intro">
+                I solve problems using a combination of tools and thinking. Here's what I work on:
+            </p>
+
+            <div class="skills-grid">
+                <!-- Skill Category 1 -->
+                <div class="skill-card">
+                    <h2 data-i18n="skills.fullstack.title">Full-Stack & Web Development</h2>
+                    <p data-i18n="skills.fullstack.desc">
+                        I build complete web applications—from what users see to how data is stored and processed. This includes creating websites, managing databases, and connecting different parts of a system to work together.
+                    </p>
+                    <p class="skill-note" data-i18n="skills.fullstack.tools">
+                        <em>Tools: Python, JavaScript, HTML/CSS, databases, APIs</em>
+                    </p>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div class="skill-card">
+                    <h2 data-i18n="skills.automation.title">Data, Web Scraping & Automation</h2>
+                    <p data-i18n="skills.automation.desc">
+                        I extract information from websites, process large amounts of data, and automate repetitive tasks. This means you can gather insights, save time, and focus on decisions instead of manual work.
+                    </p>
+                    <p class="skill-note" data-i18n="skills.automation.tools">
+                        <em>Tools: Python scripts, web scraping libraries, data processing</em>
+                    </p>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div class="skill-card">
+                    <h2 data-i18n="skills.ai.title">AI, Bots & Intelligent Agents</h2>
+                    <p data-i18n="skills.ai.desc">
+                        I create bots and automated assistants that can interact with users, answer questions, or perform tasks on their own. These tools help handle routine interactions and provide instant responses.
+                    </p>
+                    <p class="skill-note" data-i18n="skills.ai.tools">
+                        <em>Tools: Telegram bots, AI APIs, automation frameworks</em>
+                    </p>
+                </div>
+
+                <!-- Skill Category 4 -->
+                <div class="skill-card">
+                    <h2 data-i18n="skills.problemSolving.title">Problem Solving Mindset</h2>
+                    <p data-i18n="skills.problemSolving.desc">
+                        Beyond tools, I focus on understanding the actual problem before building anything. I ask questions, break down complex issues into smaller parts, and find solutions that are practical and maintainable.
+                    </p>
+                    <p class="skill-note" data-i18n="skills.problemSolving.approach">
+                        <em>Approach: Listen, analyze, simplify, build, test</em>
+                    </p>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <a href="services.html" class="btn btn-primary" data-i18n="skills.viewServices">View Services</a>
+                <a href="contact.html" class="btn btn-secondary" data-i18n="skills.discuss">Let's Discuss Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p data-i18n="footer.text">&copy; 2024 Mondir Dif. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="i18n.js"></script>
+</body>
+</html>
