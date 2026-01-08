@@ -301,3 +301,17 @@ nav a {
     text-decoration: none;
     color: inherit;
 }
+
+/* Navigation Layout FIX */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+  }
+}
