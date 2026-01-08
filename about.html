@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="about.pageTitle">About - Mondir Dif</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button onclick="switchLanguage('en')" class="lang-btn" data-lang="en">EN</button>
+        <button onclick="switchLanguage('fr')" class="lang-btn" data-lang="fr">FR</button>
+        <button onclick="switchLanguage('ar')" class="lang-btn" data-lang="ar">ع</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">MD</div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <h1 data-i18n="about.title">About Me</h1>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 data-i18n="about.heading">Digital Problem Solver</h2>
+                    
+                    <p data-i18n="about.intro">
+                        I build practical digital solutions that solve real problems. My focus is on creating tools and systems that are simple to use, scalable, and actually useful.
+                    </p>
+
+                    <p data-i18n="about.approach">
+                        I work with businesses and individuals who need clear, working solutions—not complicated systems. Whether it's a website, an automation tool, or a custom application, I focus on what works and what adds value.
+                    </p>
+
+                    <h3 data-i18n="about.philosophy.title">My Approach</h3>
+                    <ul>
+                        <li data-i18n="about.philosophy.point1"><strong>Clarity first:</strong> Simple solutions that anyone can understand and use</li>
+                        <li data-i18n="about.philosophy.point2"><strong>Practical focus:</strong> Tools that solve actual problems, not theoretical ones</li>
+                        <li data-i18n="about.philosophy.point3"><strong>Systems thinking:</strong> Building solutions that can grow with your needs</li>
+                        <li data-i18n="about.philosophy.point4"><strong>Real results:</strong> Measuring success by outcomes, not features</li>
+                    </ul>
+
+                    <p data-i18n="about.whatIDo">
+                        I work on web development, automation, data processing, and custom digital tools. My goal is to help you save time, reduce complexity, and get things done.
+                    </p>
+
+                    <div class="cta-section">
+                        <a href="projects.html" class="btn btn-primary" data-i18n="about.viewProjects">View My Projects</a>
+                        <a href="contact.html" class="btn btn-secondary" data-i18n="about.workTogether">Let's Work Together</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p data-i18n="footer.text">&copy; 2024 Mondir Dif. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="i18n.js"></script>
+</body>
+</html>
