@@ -1,0 +1,292 @@
+/* Additional CSS for Language Switcher and Projects Page */
+/* Add this to your existing styles.css file */
+
+/* Language Switcher */
+.language-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.lang-btn.active {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: #fff;
+}
+
+/* RTL Support */
+html[dir="rtl"] {
+    text-align: right;
+}
+
+html[dir="rtl"] .language-switcher {
+    right: auto;
+    left: 20px;
+}
+
+html[dir="rtl"] nav ul {
+    flex-direction: row-reverse;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 100px 20px;
+    min-height: 100vh;
+}
+
+.projects-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.project-card {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-card.featured {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+}
+
+.project-card.featured h2,
+.project-card.featured h4,
+.project-card.featured p {
+    color: #fff;
+}
+
+.project-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.project-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.project-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-details {
+    margin-top: 20px;
+}
+
+.project-details h4 {
+    font-size: 1rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 600;
+}
+
+.project-details p {
+    margin-bottom: 10px;
+}
+
+.project-card .btn {
+    margin-top: 20px;
+}
+
+.cta-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.skill-card {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.skill-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.skill-note {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.service-card {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.service-value {
+    margin-top: 20px;
+}
+
+.service-value h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+}
+
+.service-value ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.service-value li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.service-value li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .language-switcher {
+        top: 10px;
+        right: 10px;
+    }
+    
+    html[dir="rtl"] .language-switcher {
+        left: 10px;
+    }
+    
+    .projects-section h1,
+    .skills-section h1,
+    .services-section h1 {
+        font-size: 2rem;
+    }
+    
+    .projects-grid,
+    .skills-grid,
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card.featured {
+        grid-column: 1;
+    }
+}
