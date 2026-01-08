@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="contact.pageTitle">Contact - Mondir Dif</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button onclick="switchLanguage('en')" class="lang-btn" data-lang="en">EN</button>
+        <button onclick="switchLanguage('fr')" class="lang-btn" data-lang="fr">FR</button>
+        <button onclick="switchLanguage('ar')" class="lang-btn" data-lang="ar">ع</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">MD</div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h1 data-i18n="contact.title">Get in Touch</h1>
+            <p class="intro-text" data-i18n="contact.intro">
+                Have a project in mind? Let's discuss how I can help.
+            </p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 data-i18n="contact.info.title">Contact Information</h2>
+                    <p data-i18n="contact.info.desc">
+                        Feel free to reach out through any of these channels:
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <strong data-i18n="contact.email.label">Email:</strong>
+                            <a href="mailto:mondir.dfs@gmail.com">your.email@example.com</a>
+                        </div>
+                        <div class="contact-method">
+                            <strong data-i18n="contact.phone.label">Phone:</strong>
+                            <span>+213 XXX XXX XXX</span>
+                        </div>
+                        <div class="contact-method">
+                            <strong data-i18n="contact.location.label">Location:</strong>
+                            <span data-i18n="contact.location.value">Algeria</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h2 data-i18n="contact.form.title">Send a Message</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name" data-i18n="contact.form.name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="contact.form.email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-i18n="contact.form.subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="contact.form.message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-i18n="contact.form.send">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p data-i18n="footer.text">&copy; 2024 Mondir Dif. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="i18n.js"></script>
+</body>
+</html>
