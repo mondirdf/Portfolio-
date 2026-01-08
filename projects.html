@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="projects.pageTitle">Projects - Mondir Dif</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button onclick="switchLanguage('en')" class="lang-btn" data-lang="en">EN</button>
+        <button onclick="switchLanguage('fr')" class="lang-btn" data-lang="fr">FR</button>
+        <button onclick="switchLanguage('ar')" class="lang-btn" data-lang="ar">ع</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">MD</div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="container">
+            <h1 data-i18n="projects.title">Projects</h1>
+            <p class="intro-text" data-i18n="projects.intro">
+                Examples of systems and tools I've built to solve real problems
+            </p>
+
+            <div class="projects-grid">
+                <!-- Featured Live Project -->
+                <div class="project-card featured">
+                    <div class="project-badge" data-i18n="projects.khadmty.badge">Live Project</div>
+                    <h2 data-i18n="projects.khadmty.title">Khadmty – Local Services Platform</h2>
+                    <p data-i18n="projects.khadmty.desc">
+                        A web platform designed to connect users with local service providers. Focused on simplicity, clarity, and accessibility.
+                    </p>
+                    <div class="project-details">
+                        <h4 data-i18n="projects.khadmty.purpose.title">Purpose:</h4>
+                        <p data-i18n="projects.khadmty.purpose.desc">
+                            Demonstrate ability to build functional, real-world systems that are deployed and accessible online.
+                        </p>
+                        <h4 data-i18n="projects.khadmty.built.title">Built with:</h4>
+                        <p data-i18n="projects.khadmty.built.tools">Next.js, React, Modern web technologies</p>
+                    </div>
+                    <a href="https://khadmty.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="projects.khadmty.viewLive">
+                        View Live Project →
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h2 data-i18n="projects.telegram.title">Telegram Automation Bot</h2>
+                    <p data-i18n="projects.telegram.desc">
+                        A bot that automatically responds to user messages, processes requests, and performs tasks based on commands. Designed for businesses to handle customer interactions without manual intervention.
+                    </p>
+                    <div class="project-details">
+                        <h4 data-i18n="projects.telegram.purpose.title">Purpose:</h4>
+                        <p data-i18n="projects.telegram.purpose.desc">
+                            Save time by automating repetitive conversations and providing instant responses 24/7.
+                        </p>
+                        <h4 data-i18n="projects.telegram.built.title">Built with:</h4>
+                        <p data-i18n="projects.telegram.built.tools">Python, Telegram Bot API, automation logic</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <h2 data-i18n="projects.scraper.title">Web Scraping Tool</h2>
+                    <p data-i18n="projects.scraper.desc">
+                        A tool that extracts data from websites, organizes it into a usable format, and saves it for analysis. Useful for market research, competitive analysis, or gathering public information at scale.
+                    </p>
+                    <div class="project-details">
+                        <h4 data-i18n="projects.scraper.purpose.title">Purpose:</h4>
+                        <p data-i18n="projects.scraper.purpose.desc">
+                            Eliminate hours of manual data collection and get structured information quickly.
+                        </p>
+                        <h4 data-i18n="projects.scraper.built.title">Built with:</h4>
+                        <p data-i18n="projects.scraper.built.tools">Python, web scraping libraries, data processing</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <h2 data-i18n="projects.portfolio.title">Portfolio Website</h2>
+                    <p data-i18n="projects.portfolio.desc">
+                        A clean, professional portfolio website to showcase work, skills, and services. Built with simplicity and performance in mind—no unnecessary features, just what's needed.
+                    </p>
+                    <div class="project-details">
+                        <h4 data-i18n="projects.portfolio.purpose.title">Purpose:</h4>
+                        <p data-i18n="projects.portfolio.purpose.desc">
+                            Demonstrate ability to create functional, maintainable websites with good structure.
+                        </p>
+                        <h4 data-i18n="projects.portfolio.built.title">Built with:</h4>
+                        <p data-i18n="projects.portfolio.built.tools">HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <p data-i18n="projects.cta.text">Interested in working together?</p>
+                <a href="contact.html" class="btn btn-primary" data-i18n="projects.cta.button">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p data-i18n="footer.text">&copy; 2024 Mondir Dif. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="i18n.js"></script>
+</body>
+</html>
