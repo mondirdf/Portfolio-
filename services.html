@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="services.pageTitle">Services - Mondir Dif</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button onclick="switchLanguage('en')" class="lang-btn" data-lang="en">EN</button>
+        <button onclick="switchLanguage('fr')" class="lang-btn" data-lang="fr">FR</button>
+        <button onclick="switchLanguage('ar')" class="lang-btn" data-lang="ar">ع</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">MD</div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <h1 data-i18n="services.title">Services</h1>
+            <p class="intro-text" data-i18n="services.intro">
+                Practical digital solutions focused on solving your specific problems
+            </p>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <h2 data-i18n="services.websites.title">Websites for Small Businesses</h2>
+                    <p data-i18n="services.websites.desc">
+                        A clear, functional website that helps customers find you and understand what you offer. No unnecessary complexity—just a professional online presence that works.
+                    </p>
+                    <div class="service-value">
+                        <h4 data-i18n="services.websites.value.title">Value:</h4>
+                        <ul>
+                            <li data-i18n="services.websites.value.point1">Be visible online 24/7</li>
+                            <li data-i18n="services.websites.value.point2">Easy for customers to contact you</li>
+                            <li data-i18n="services.websites.value.point3">Professional image for your business</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <h2 data-i18n="services.automation.title">Automation & Bots</h2>
+                    <p data-i18n="services.automation.desc">
+                        Automate repetitive tasks and save time with custom bots. Whether it's responding to customer inquiries, processing data, or scheduling tasks—automation handles it so you don't have to.
+                    </p>
+                    <div class="service-value">
+                        <h4 data-i18n="services.automation.value.title">Value:</h4>
+                        <ul>
+                            <li data-i18n="services.automation.value.point1">Save hours of manual work</li>
+                            <li data-i18n="services.automation.value.point2">Reduce human error</li>
+                            <li data-i18n="services.automation.value.point3">Instant responses and actions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <h2 data-i18n="services.dataProcessing.title">Data Collection & Processing</h2>
+                    <p data-i18n="services.dataProcessing.desc">
+                        Extract information from websites, organize data, and turn it into useful insights. Get the information you need without spending hours manually collecting and sorting it.
+                    </p>
+                    <div class="service-value">
+                        <h4 data-i18n="services.dataProcessing.value.title">Value:</h4>
+                        <ul>
+                            <li data-i18n="services.dataProcessing.value.point1">Faster decision-making with organized data</li>
+                            <li data-i18n="services.dataProcessing.value.point2">Competitive insights from market data</li>
+                            <li data-i18n="services.dataProcessing.value.point3">Time saved on research and collection</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <h2 data-i18n="services.custom.title">Custom Digital Solutions</h2>
+                    <p data-i18n="services.custom.desc">
+                        Have a specific problem that existing tools don't solve? I build custom applications and systems tailored to your exact needs—whether it's tracking, managing, or connecting different parts of your workflow.
+                    </p>
+                    <div class="service-value">
+                        <h4 data-i18n="services.custom.value.title">Value:</h4>
+                        <ul>
+                            <li data-i18n="services.custom.value.point1">Solutions that fit your exact workflow</li>
+                            <li data-i18n="services.custom.value.point2">No paying for features you don't need</li>
+                            <li data-i18n="services.custom.value.point3">Scalable as your business grows</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <a href="projects.html" class="btn btn-primary" data-i18n="services.seeExamples">See Examples</a>
+                <a href="contact.html" class="btn btn-secondary" data-i18n="services.startProject">Start a Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p data-i18n="footer.text">&copy; 2024 Mondir Dif. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="i18n.js"></script>
+</body>
+</html>
